@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "language": {
+      "english": "Anglais",
+      "french": "Français",
+      "german": "Allemand"
+    }
+  },
+  "welcome": {
+    "hello": "Bienvenue sur la super liste"
+  },
+  "dashboard": {
+    "mean": "Moyen",
+    "median": "Médiane",
+    "std": "écart-type",
+    "count": "counté"
+  }
+}

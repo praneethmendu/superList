@@ -1,0 +1,12 @@
+<div class="canvas">
+  <div class='gradient'>
+    <router-outlet></router-outlet>
+    <div class="home-page"><a routerLink='/'>Super List</a></div>
+    <select (change)="updateLang($event)" class="language-select">
+      <option value="en">{{"meta.language.english" | translate}}</option>
+      <option value="fr">{{"meta.language.french" | translate}}</option>
+      <option value="de">{{"meta.language.german" | translate}}</option>
+    </select>
+
+  </div>
+</div>

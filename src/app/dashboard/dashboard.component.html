@@ -1,0 +1,42 @@
+<div class="dashboard-main">
+  <div>
+    <mat-card class="list-card">
+      <div *ngFor="let item of list; index as i" class="shell">
+        {{item}}
+        <button mat-icon-button aria-label="close" (click)="deleteItem(i)">
+          <mat-icon style="color:grey;">close</mat-icon>
+        </button>
+        <hr class="grey-line" />
+      </div>
+    </mat-card>
+
+    <form [formGroup]="myForm" (ngSubmit)="addNumber()">
+      <mat-form-field appearance="outline" class="new-number">
+        <input matInput formControlName="newNumber" type="number">
+      </mat-form-field>
+      <button mat-mini-fab [disabled]="myForm.value.newNumber==='' || myForm.value.newNumber===null " class='add-number'
+        color="primary">
+        <mat-icon>add</mat-icon>
+      </button>
+    </form>
+  </div>
+
+  <div>
+    <mat-card class="display-card">
+      <div class="display-description">{{'dashboard.count' | translate}}</div>
+      <p class="display-info">{{list.length ? list.length : '&nbsp;'}}</p>
+    </mat-card>
+    <mat-card class="display-card">
+      <div class="display-description">{{'dashboard.mean' | translate}}</div>
+      <p class="display-info">{{list.length ? mean() : '&nbsp;'}}</p>
+    </mat-card>
+    <mat-card class="display-card">
+      <div class="display-description">{{'dashboard.median' | translate}}</div>
+      <p class="display-info">{{list.length ? median(): '&nbsp;'}}</p>
+    </mat-card>
+    <mat-card class="display-card">
+      <div class="display-description">{{'dashboard.std' | translate}}</div>
+      <p class="display-info">{{list.length ? std(): '&nbsp;'}}</p>
+    </mat-card>
+  </div>
+</div>

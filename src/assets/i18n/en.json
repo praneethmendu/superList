@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "language": {
+      "english": "English",
+      "french": "French",
+      "german": "German"
+    }
+  },
+  "welcome": {
+    "hello": "Welcome to super list",
+    "info": "a localstorage based list saver so you can... ",
+    "start": "start"
+  },
+  "dashboard": {
+    "count": "count",
+    "mean": "average",
+    "median": "median",
+    "std": "standard deviation"
+  }
+}

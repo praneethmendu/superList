@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "language": {
+      "english": "Englisch",
+      "french": "Französisch",
+      "german": "Deutsch"
+    }
+  },
+  "welcome": {
+    "hello": "Willkommen in der Superliste",
+    "info": "ein Localstorage-basierter Listenschoner, damit Sie...",
+    "start": "starten"
+  },
+  "dashboard": {
+    "count": "zählen",
+    "mean": "Gemittelter",
+    "median": "Median",
+    "std": "Standardabweichung"
+  }
+}
